@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.entire-page {
+    background-color: #606c38;
+    display: flex;
+}
+
+.image-container {
+    width: 40vw;
+    height: 100vh;
+    background-color: #283618;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 26%;
+    bottom: 2%;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.deer {
+    width: 30vw;
+    height: 60vh;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    padding-top: 200px;
+}
+
+/* input {
+    margin: 15px;
+} */
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    margin-left: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 50px;
+    background-color: #606c38;
+}
+
+label {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+    margin-top: 20px;
+    color: #fee440;
+}
+
+button {
+    position: relative;
+    left: 55%;
+    margin-top: 40px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+h1 {
+    color: #fee440;
+    position: absolute;
+    left: 65%;
+    top: 35%;
+}
