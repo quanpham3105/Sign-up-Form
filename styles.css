@@ -45,10 +45,6 @@ a {
     padding-top: 200px;
 }
 
-/* input {
-    margin: 15px;
-} */
-
 input {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -63,6 +59,32 @@ input {
     width: 300px;
     height: 50px;
     background-color: #606c38;
+    color: white;
+    padding-left: 10px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:invalid {
+    border-color: red;
+    outline: none;
+}
+
+input:valid {
+    border-color: greenyellow;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 label {
@@ -83,8 +105,22 @@ button {
     margin-top: 40px;
 }
 
-input::placeholder {
-    color: white;
+button {
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 h1 {
@@ -92,4 +128,8 @@ h1 {
     position: absolute;
     left: 65%;
     top: 35%;
+}
+
+button:active {
+    background-color: lightblue;
 }
